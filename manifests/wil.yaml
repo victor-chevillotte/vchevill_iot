@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vchevill-app
+      name: vchevill-app
   template:
     metadata:
       labels:
-        app: vchevill-app
+        name: vchevill-app
     spec:
       containers:
       - name: wil-playground

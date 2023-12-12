@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: vchevill-app
+      app: vchevill-playground
   template:
     metadata:
       labels:
-        name: vchevill-app
+        app: vchevill-playground
     spec:
       containers:
       - name: wil-playground
@@ -24,7 +24,7 @@ metadata:
   name: vchevill-playground
 spec:
   selector:
-    name: vchevill-playground
+    app: vchevill-playground
   ports:
   - name: http
     port: 8888

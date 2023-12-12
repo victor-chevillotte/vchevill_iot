@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vchevill-app
+  name: vchevill-playground
 spec:
   replicas: 1
   selector:
@@ -21,10 +21,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: vchevill-app
+  name: vchevill-playground
 spec:
   selector:
-    app: vchevill-app
+    name: vchevill-playground
   ports:
   - name: http
     port: 8888
